@@ -12,6 +12,12 @@
 		AEC7999F2B3332DC00351B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC7999E2B3332DC00351B1D /* Assets.xcassets */; };
 		AEC799A22B3332DC00351B1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC799A12B3332DC00351B1D /* Preview Assets.xcassets */; };
 		AEC799A92B3334D700351B1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AEC799A82B3334D700351B1D /* README.md */; };
+		AEC799AB2B33379800351B1D /* DateTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799AA2B33379800351B1D /* DateTitle.swift */; };
+		AEC799AF2B3338A600351B1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799AE2B3338A600351B1D /* HomeView.swift */; };
+		AEC799B12B33392500351B1D /* FeaturedCourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B02B33392500351B1D /* FeaturedCourseCard.swift */; };
+		AEC799B32B333A4100351B1D /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B22B333A4100351B1D /* FeaturedCourseList.swift */; };
+		AEC799B62B333B2F00351B1D /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B52B333B2F00351B1D /* CourseCard.swift */; };
+		AEC799B82B333B6100351B1D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B72B333B6100351B1D /* CourseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		AEC7999E2B3332DC00351B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC799A12B3332DC00351B1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEC799A82B3334D700351B1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AEC799AA2B33379800351B1D /* DateTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTitle.swift; sourceTree = "<group>"; };
+		AEC799AE2B3338A600351B1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AEC799B02B33392500351B1D /* FeaturedCourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseCard.swift; sourceTree = "<group>"; };
+		AEC799B22B333A4100351B1D /* FeaturedCourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCourseList.swift; sourceTree = "<group>"; };
+		AEC799B52B333B2F00351B1D /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
+		AEC799B72B333B6100351B1D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,9 @@
 		AEC799992B3332DB00351B1D /* SwiftUIConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				AEC799AD2B33389300351B1D /* Views */,
+				AEC799AC2B33388300351B1D /* Componets */,
 				AEC7999A2B3332DB00351B1D /* SwiftUIConcurrencyApp.swift */,
-				AEC7999C2B3332DB00351B1D /* ContentView.swift */,
 				AEC7999E2B3332DC00351B1D /* Assets.xcassets */,
 				AEC799A02B3332DC00351B1D /* Preview Content */,
 			);
@@ -68,6 +81,27 @@
 				AEC799A12B3332DC00351B1D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEC799AC2B33388300351B1D /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				AEC799B22B333A4100351B1D /* FeaturedCourseList.swift */,
+				AEC799AA2B33379800351B1D /* DateTitle.swift */,
+				AEC799B52B333B2F00351B1D /* CourseCard.swift */,
+				AEC799B02B33392500351B1D /* FeaturedCourseCard.swift */,
+				AEC799B72B333B6100351B1D /* CourseList.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		AEC799AD2B33389300351B1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC7999C2B3332DB00351B1D /* ContentView.swift */,
+				AEC799AE2B3338A600351B1D /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC799B82B333B6100351B1D /* CourseList.swift in Sources */,
 				AEC7999D2B3332DB00351B1D /* ContentView.swift in Sources */,
+				AEC799AF2B3338A600351B1D /* HomeView.swift in Sources */,
+				AEC799B32B333A4100351B1D /* FeaturedCourseList.swift in Sources */,
+				AEC799B12B33392500351B1D /* FeaturedCourseCard.swift in Sources */,
+				AEC799B62B333B2F00351B1D /* CourseCard.swift in Sources */,
 				AEC7999B2B3332DB00351B1D /* SwiftUIConcurrencyApp.swift in Sources */,
+				AEC799AB2B33379800351B1D /* DateTitle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIConcurrency/Preview Content\"";
@@ -291,6 +332,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackley.SwiftUIConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIConcurrency/Preview Content\"";
@@ -320,6 +365,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackley.SwiftUIConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
