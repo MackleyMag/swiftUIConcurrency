@@ -18,6 +18,7 @@
 		AEC799B32B333A4100351B1D /* FeaturedCourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B22B333A4100351B1D /* FeaturedCourseList.swift */; };
 		AEC799B62B333B2F00351B1D /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B52B333B2F00351B1D /* CourseCard.swift */; };
 		AEC799B82B333B6100351B1D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC799B72B333B6100351B1D /* CourseList.swift */; };
+		AEC799BB2B3363CC00351B1D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AEC799BA2B3363CC00351B1D /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC799BB2B3363CC00351B1D /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,9 @@
 			dependencies = (
 			);
 			name = SwiftUIConcurrency;
+			packageProductDependencies = (
+				AEC799BA2B3363CC00351B1D /* Apollo */,
+			);
 			productName = SwiftUIConcurrency;
 			productReference = AEC799972B3332DB00351B1D /* SwiftUIConcurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +153,9 @@
 				Base,
 			);
 			mainGroup = AEC7998E2B3332DB00351B1D;
+			packageReferences = (
+				AEC799B92B3363CC00351B1D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = AEC799982B3332DB00351B1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEC799B92B3363CC00351B1D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEC799BA2B3363CC00351B1D /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEC799B92B3363CC00351B1D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AEC7998F2B3332DB00351B1D /* Project object */;
 }
